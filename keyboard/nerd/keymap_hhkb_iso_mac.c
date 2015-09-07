@@ -7,7 +7,7 @@
  *   position adjacent to spacebar.
  *
  * HHKB-specific tweaks:
- * - For Layer 2, moves CAPS to Escape position so LCTL can pass through,
+ * - For Layer 2, moves CAPS to TAB position so LCTL can pass through,
  *   to allow for Ctrl-F<#> key combinations (no RCTL available).
  */
 const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -24,11 +24,11 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS, FN0, \
                     TRNS,TRNS,          FN1,                          TRNS,TRNS),
     /* Layer 2: Functions */
-    KEYMAP_ISO(CAPS,F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, MUTE, \
-               TRNS,BTN1,MS_U,BTN3,PSCR,SLCK,PAUS,HOME,INS, END, MPLY,VOLD,VOLU,FN3,  \
-               TRNS,MS_L,MS_D,MS_R,PGDN,TRNS,LEFT,DOWN,UP  ,RGHT,MPRV,MNXT,     FN2,  \
-               UP,  DOWN,TRNS,DEL, TRNS,TRNS,PGUP,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS, \
-                    LEFT,RGHT,          TRNS,                         TRNS,TRNS)
+    KEYMAP_ISO(TRNS,F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, TRNS, \
+               CAPS,TRNS,TRNS,TRNS,PSCR,SLCK,PAUS,HOME,INS, END, TRNS,UP,  TRNS,TRNS, \
+               TRNS,VOLD,VOLU,MUTE,PGDN,TRNS,LEFT,DOWN,UP  ,RGHT,LEFT,RGHT,     FN2,  \
+               TRNS,TRNS,TRNS,DEL, TRNS,TRNS,PGUP,TRNS,TRNS,TRNS,TRNS,DOWN,TRNS,TRNS, \
+                    TRNS,TRNS,          TRNS,                         TRNS,TRNS)
 };
 
 const uint16_t PROGMEM fn_actions[] = {
