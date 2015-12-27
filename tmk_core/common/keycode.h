@@ -85,13 +85,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define KC_LCAP KC_LOCKING_CAPS
 #define KC_LNUM KC_LOCKING_NUM
 #define KC_LSCR KC_LOCKING_SCROLL
-#define KC_ERAS KC_ALT_ERASE,
+#define KC_ERAS KC_ALT_ERASE
 #define KC_CLR  KC_CLEAR
 /* Japanese specific */
 #define KC_ZKHK KC_GRAVE
 #define KC_RO   KC_INT1
 #define KC_KANA KC_INT2
 #define KC_JYEN KC_INT3
+#define KC_JPY  KC_INT3
 #define KC_HENK KC_INT4
 #define KC_MHEN KC_INT5
 /* Keypad */
@@ -156,6 +157,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define KC_WSTP KC_WWW_STOP
 #define KC_WREF KC_WWW_REFRESH
 #define KC_WFAV KC_WWW_FAVORITES
+/* Jump to bootloader */
+#define KC_BTLD KC_BOOTLOADER
 /* Transparent */
 #define KC_TRANSPARENT  1
 #define KC_TRNS KC_TRANSPARENT
@@ -425,6 +428,9 @@ enum internal_special_keycodes {
     KC_WWW_FAVORITES,
     KC_MEDIA_FAST_FORWARD,
     KC_MEDIA_REWIND,    /* 0xBC */
+
+    /* Jump to bootloader */
+    KC_BOOTLOADER       = 0xBF,
 
     /* Fn key */
     KC_FN0              = 0xC0,
