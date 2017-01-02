@@ -22,6 +22,7 @@ autoconf && ./configure && make
 
 #### make for HHKB ISO
 ~~~
+cd keyboard/nerd
 LAYOUT=hhkb KEYMAP=iso_mac make
 ~~~
 
